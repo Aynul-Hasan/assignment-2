@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*************************global css***************************/
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/***********************header css start**************************/
+header{
+    background-color: #2D25A0;
+    height: 100vh;
+    margin-bottom: 70px;
+    width: 100% !important;
+}
+.container{
+    width: 1120px;
+    height: 438px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+}
+.header-left-h1{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+}
+.header-left-btn{
+    background: #E02C6D;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+.header-left-btn:hover{
+    background-color: #9c093f;
+
+}
+
+.header-left-btn i{
+    margin-left: 10px;
+    color: #fff;
+    transition: .8s ease;
+}
+.header-left-btn:hover i{
+    transform: rotate(360deg);
+}
+.header-right img{
+    width: 556px;
+    height: 438px;
+    
+}
+
+/***********************header css end**************************/
+
+
+/************************players section css start***************/
+.players-section{
+
+    width: 1050px;
+    margin: auto;
+}
+.players-first-row ,.players-second-row ,.players-third-row, .players-fourth-row{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.player-card{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: .9s ease-in-out;
+}
+.player-card:hover{
+    transform: scale(1.05);
+}
+.player-card-top{
+    margin-bottom: 16px;
+}
+.player-card-top img{
+    margin: 15px 15px 0 15px;
+    width: 300px;
+    height: 256px;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+.player-card-top img:hover{
+    transform: scale(1.1);
+}
+.player-card-bottom{
+    margin: 0 15px 15px 15px;
+    cursor: hand;
+}
+.player-card-bottom h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+
+}
+.player-card-bottom p{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6C6C6C;
+}
+
+
+/*  player second row */
+.players-second-row ,.players-third-row{
+    margin: 27px 0;
+}
+
+
+/************************players section css end***************/
+
+/************************* footer css start*********************/
+footer{
+    margin-top: 158px;
+    
+}
+.footer-logo ,.footer-icon , .footer-text{
+    text-align: center;
+}
+.footer-logo img{
+    width: 483px;
+    height: 110px;
+   
+}
+.footer-icon{
+    margin: 20px 0;
+}
+.footer-icon i{
+    margin-left: 14px;
+    color: #969BAB;
+    background-color: #9a9ea8a4;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+.footer-icon i:hover{
+    transform: rotate(360deg);
+}
+.footer-text{
+    margin-bottom: 68px;
+} 
+.footer-text p{
+    font-size: 18px;
+}
+
+/************************* footer css end*********************/
+/****************************media qurey start****************/
+ @media (max-width:668px) {
+     /****** header ******/
+     header{
+         padding: 0 !important;
+     }
+     .container{
+         display: flex;
+         flex-direction: column;
+        
+        width: 100%;
+     }
+     .header-left{
+       
+         margin: 112px 0 50px 0px;
+         padding-left: 15px;
+
+     }
+     .header-left-h1{
+         font-size: 30px;
+         line-height: 50px;
+          width: 100%;
+          display: inline-block;
+     }
+     .header-right{
+         margin-left: 15px;
+     }
+     .header-right img{
+         width: 320px;
+         height: 269px;
+
+     }
+     /*******players section******/
+
+     .players-section{
+         /* margin: 47px -15px 0 15px; */
+        margin: auto;
+         width: 100%;
+     }
+     .players-first-row ,.players-second-row ,.players-third-row,.players-fourth-row{
+         display: flex;
+         flex-direction: column;
+        padding-bottom: 24px;
+        
+     }
+     .player-card{
+        margin: 24px auto ;
+     }
+     .players-second-row ,.players-third-row{
+        margin: 0px 0;
+    }
+    /*******footer*******/
+    footer{
+        width: 100%;
+        margin-top: 38px;
+    }
+    .footer-logo img{
+        width: 133px;
+        height: 30px;
+    }
+    .footer-text{
+        width: 100%;
+    }
+ }
