@@ -121,7 +121,49 @@ header{
 
 
 /************************players section css end***************/
-
+/************************contact section start*****************/
+.contact-div{
+    margin: 5rem 0 ; 
+    display: flex;
+    justify-content: space-around;
+}
+#contact h1{
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: sans-serif;
+    color: #464646;
+}
+.contact-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.contact-right{
+    width: 50%;
+}
+.contact-right div{
+    margin-bottom: 20px;
+}
+.contact-right div input, textarea{
+    width: 50%;
+    padding: 5px 20px;
+}
+.contact-right div input{
+    height: 35px;
+}
+.submit-btn{
+    background-color: #E02C6D;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 57%;
+    cursor: pointer;
+    color:#fff;
+}
+/************************contact section end*****************/
 /************************* footer css start*********************/
 footer{
     margin-top: 158px;
@@ -210,6 +252,40 @@ footer{
      .players-second-row ,.players-third-row{
         margin: 0px 0;
     }
+    /********contact******/
+    #contact{
+        width: 100%;
+    }
+    #contact h1{
+        text-align: center;
+        font-size: 25px;
+        color: #464646;
+    }
+    .contact-div{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0 10rem 0;
+    }
+    .contact-left{
+        margin: auto;
+    }
+    .contact-right{
+        width: 93%;
+        margin: 2rem 0 0 15px;
+        /* margin: auto; */
+    }
+    .contact-right div input, textarea{
+       width: 87%;
+       padding: 5px 20px;
+       /* margin: auto; */
+    }
+    .contact-right div  {
+       /* margin-left: 15px; */
+    }
+    .contact-right .submit-btn{
+        width: 99%;
+    }
+
     /*******footer*******/
     footer{
         width: 100%;
