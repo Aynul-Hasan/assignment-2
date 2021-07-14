@@ -124,8 +124,9 @@ header{
 /************************contact section start*****************/
 .contact-div{
     margin: 5rem 0 ; 
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
 }
 #contact h1{
     margin-top: 10rem;
@@ -136,19 +137,21 @@ header{
     color: #464646;
 }
 .contact-left{
-    display: flex;
+    margin: auto;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    width: 50%;
+    align-items: center; */
+    /* width: 50%; */
 }
 .contact-right{
-    width: 50%;
+    margin: auto;
+    width: 70%;
 }
 .contact-right div{
     margin-bottom: 20px;
 }
 .contact-right div input, textarea{
-    width: 50%;
+    width: 90%;
     padding: 5px 20px;
 }
 .contact-right div input{
@@ -159,7 +162,7 @@ header{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    width: 57%;
+    width: 100%;
     cursor: pointer;
     color:#fff;
 }
@@ -254,7 +257,7 @@ footer{
     }
     /********contact******/
     #contact{
-        width: 100%;
+        width: 100% !important;
     }
     #contact h1{
         text-align: center;
@@ -262,28 +265,26 @@ footer{
         color: #464646;
     }
     .contact-div{
-        display: flex;
-        flex-direction: column;
+       grid-template-columns: repeat(1, 1fr);
         margin: 2rem 0 10rem 0;
     }
     .contact-left{
         margin: auto;
     }
     .contact-right{
-        width: 93%;
+        
         margin: 2rem 0 0 15px;
-        /* margin: auto; */
+        margin: auto;
+        width: 90%;
     }
     .contact-right div input, textarea{
-       width: 87%;
        padding: 5px 20px;
-       /* margin: auto; */
     }
     .contact-right div  {
-       /* margin-left: 15px; */
+       margin-right: 10px;
     }
     .contact-right .submit-btn{
-        width: 99%;
+       width: 100%;
     }
 
     /*******footer*******/
